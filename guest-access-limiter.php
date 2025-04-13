@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Guest Access Limiter
- * Description: Limits guest users access for various post types with notification popup overlay functionality.
+ * Description: Limits guest users access for various post types content with notification popup overlay functionality.
  * Version: 1.0
  * Author: Konstantine
  *
@@ -229,7 +229,6 @@ function gal_overlay_html( $remaining_views ) {
 			<button id="gal-continue-button" class="btn btn-primary" style="background-color: <?php echo esc_attr( get_option( 'gal_button_color_view', '#007bff' ) ); ?>;">
 				<?php echo esc_html( get_option( 'gal_button_text_view', 'View as Guest' ) ); ?>
 			</button>
-			<p>or</p>
 			<a class="btn btn-success" style="background-color: <?php echo esc_attr( get_option( 'gal_button_color_register', '#28a745' ) ); ?>;" href="<?php echo esc_url( get_option( 'gal_url_register' ) ); ?>">
 				<?php echo esc_html( get_option( 'gal_button_text_register', 'Register to View' ) ); ?>
 			</a>
